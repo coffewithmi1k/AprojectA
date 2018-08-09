@@ -1,20 +1,20 @@
 package stepDefinitions;
 
-import cucumber.api.PendingException;
+
+import config.MyConfig;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class FeatureGoogle {
+public class FeatureGoogle extends MyConfig {
 
 
-     WebDriver driver;
+
 
     @Before
     public void setup(){
